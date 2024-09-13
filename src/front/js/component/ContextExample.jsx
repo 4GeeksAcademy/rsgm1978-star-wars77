@@ -9,7 +9,7 @@ export const ContextExample = () => {
 
     return  (
         <div className="container texte-center border mt-3">
-        utilizo
+        utilizo la sintaxis store.clave para poder mostrar el valor
             <p>{'store.user'}</p>
             <p>{'store.cohorte'}</p>
         </div>

@@ -1,5 +1,6 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
+		//store van a devolver digamos que "variables= objetos,arrays, null, etc." globales
 		store: {
 			message: null,
 			demo: [
@@ -15,6 +16,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}
 			]
 		},
+		//actions va devolver acciones (funcion a nivel global y esta va ser una funcion felcha) globales
 		actions: {
 			// Use getActions to call a function within a fuction
 			exampleFunction: () => {

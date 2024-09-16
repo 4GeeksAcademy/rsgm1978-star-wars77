@@ -8,13 +8,13 @@ export const Characters = () => {
     return (
         <div className="container">
             <h1>Caharacters</h1>
-            <ul className="list-group">
+            {/* <ul className="list-group">
                 {store.characters.map((item) =>
                 <li key={item.uid} className="list-group-item">
                     {item.name}
                 </li>)                
                 }
-            </ul>
+            </ul> */}
         </div>
     )
 }

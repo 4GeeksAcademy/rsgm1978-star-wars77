@@ -1,5 +1,5 @@
 //1 importar el hook useContext
-import React { useContext} from "react";
+import React, { useContext} from "react";
  //2 importamos Context desde el archivo appContext.js
 import { Context } from "../store/appContext.js";
 

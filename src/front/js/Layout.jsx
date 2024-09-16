@@ -10,6 +10,15 @@ import { Footer } from "./component/Footer.jsx";
 import { Home } from "./pages/Home.jsx";
 import { Demo } from "./pages/Demo.jsx";
 import { Single } from "./pages/Single.jsx";
+import { Characters } from "./pages/Characters.jsx";
+import { DetailsCharacter } from "./pages/DetailsCharacter.jsx";
+import { Planets } from "./pages/Planets.jsx";
+import { DetailsPlanet } from "./pages/DetailsPlanet.jsx";
+import { Starships } from "./pages/Starships.jsx";
+import { DetailsStarship } from "./pages/DetailsStarship.jsx";
+import { AddContact } from "./pages/AddContact.jsx";
+import { EditContact } from "./pages/EditContact.jsx";
+import { Contacts } from "./pages/Contacts.jsx";
 
 
 //create your first component
@@ -26,9 +35,16 @@ const Layout = () => {
                     <Navbar />
                     <Routes>
                         <Route element={<Home />} path="/" />
-                        <Route element={<Demo />} path="/demo" />
-                        <Route element={<Single />} path="/single/:theid" />
+                        <Route element={<Characters />} path="/characters" />
+                        <Route element={<DetailsCharacter />} path="/characters/:uid" />
                         <Route element={<h1>Not found!</h1>} path="*" />
+                        <Route element={<Planets />} path="/planets" />
+                        <Route element={<DetailsPlanet />} path="/planets/:uid" />
+                        <Route element={<Starships />} path="/starships" />
+                        <Route element={<DetailsStarship />} path="/starships/:uid" />
+                        <Route element={<AddContact />} path="/add-contact" />
+                        <Route element={<EditContact />} path="/edit-contact" />
+                        <Route element={<Contacts />} path="/contacts" />
                     </Routes>
                     <Footer />
                 </ScrollToTop>

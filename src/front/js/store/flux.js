@@ -2,25 +2,15 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		//store van a devolver digamos que "variables= objetos,arrays, null, etc." globales
 		store: {
-			message: null,
-			demo: [
-				{
-					title: "FIRST",
-					background: "white",
-					initial: "white"
+			username: "rsgm1978",
+			contacts:[],
+			hostContacts: "https://playground.4geeks.com/contact",
+			rsgm1978: "Rama78",
 				},
-				{
-					title: "SECOND",
-					background: "white",
-					initial: "white"
-				}
-			]
-		},
 		//actions va devolver acciones (funcion a nivel global y esta va ser una funcion felcha) globales
 		actions: {
 			// Use getActions to call a function within a fuction
-			exampleFunction: () => {
-				getActions().changeColor(0, "green");
+
 			},
 
 			getMessage: async () => {
@@ -51,6 +41,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 			}
 		}
 	};
-};
+
 
 export default getState;
